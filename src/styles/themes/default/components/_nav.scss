@@ -11,6 +11,9 @@
     @include createFlex(row,center,center,wrap);
     @media (max-width:1164px){
         height: 152px;
+    }
+    @include breakpoint-down(medium){
+        display: none;
     }   
     &__list{
         margin: 0px;

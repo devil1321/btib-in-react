@@ -5,20 +5,96 @@
     z-index: 2;
     padding:0px 140px 20px 100px;
     background-color: $header-bg;
-    @include createFlex(row,space-between,center,null);
+    @include createFlex(row,space-between,center,wrap);
+    @include breakpoint-down(medium){
+        padding:10px;
+    }
+    img{
+        @include breakpoint-down(medium){
+            width: 60%;
+        }
+    }
+    &__menu-sm{
+        display: none;
+        padding: 5px 15px;
+        background-color: $light-orange;
+        border-radius: 3px;
+        @include breakpoint-down(medium){
+            display: block;
+            @include createFlex(row,space-between,center,null);
+        }
+        p{
+            font-family: $monoserat;
+            font-weight: bold;
+            color:$text-color;
+            margin-right: 10px;
+        }
+        span{
+            width: 25px;
+            display: block;
+            margin:5px 0px;
+            border:2px solid black;
+            border-radius:5px;
+            transition: all 1s ease-in-out;
+            &.open{
+                span:first-of-type{
+                    transform: rotate(45deg);
+                }
+                span:nth-of-type(2){
+                    opacity: 0;
+                }
+                span:last-of-type{
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+    &__list{
+        display: none;
+        @include breakpoint-down(medium){
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            margin:0px;
+            padding: 0px 0px 0px 10px;
+            list-style-type: none;
+            height: 0px;
+            transition: all 700ms ease-in-out;
+        }
+    }
+    &__item{
+        font-family: $monoserat;
+        font-weight: bold;
+        text-align: left;
+        color:$light-white;
+        margin: 20px 0px;
+    }
     &__widget-wrapper{
-        @include createFlex(row,space-between,center,null);
+        @include createFlex(row,space-between,center,wrap);    
     }
     &__widget{
         padding: 0px 15px;
-        @include createFlex(row,space-between,flex-start,null);
         border-right: 1px solid $border-color;
+        @include createFlex(row,space-between,flex-start,null);
+        @include breakpoint-down(medium){
+            width: 100vw;
+            border-right: 0px;
+            border-bottom: 1px solid $border-color;
+            padding: 10px 15px;
+            @include createFlex(row,flex-start,flex-start,null);
+            &:first-of-type{
+                border-top: 1px solid $border-color;
+            }
+        }
         p{
             margin: 2px 0px;
             font-weight: bold;
             font-size: pxToRem(14);
+            
+         
         }
         p:first-of-type{
+         
             font-family: $monoserat;
             color:$light-white;
         }
@@ -35,6 +111,32 @@
             &:hover{
                 color:$light-white;
             }
+     
+        }
+    }
+    &__widget{
+        &:first-of-type{
+            .widget__text{
+                margin-left: 5px;
+            }
+        }
+        &:last-of-type{
+            .widget__text{
+                margin-left: 5px;
+            }
+        }
+    }
+    &__text{
+        @include breakpoint-down(medium){
+            margin-left: 10px;
+           
+        }
+    }
+    a{
+        @include breakpoint-down(medium){
+            padding: 10px 0px;
+            width: 100%;
+            text-align: center;
         }
     }
     .fa-facebook{
@@ -42,5 +144,8 @@
         margin-left:15px;
         color:$light-orange;
         font-size: pxToRem(25);
+        @include breakpoint-down(medium){
+            margin-left: -45px;
+        }
     }
 }
