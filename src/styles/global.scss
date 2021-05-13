@@ -1,10 +1,15 @@
+h1,h6{
+    font-display: auto;
+}
 a{
     text-decoration: none;
+    font-display: auto;
 }
 p{
     font-family:$source-pro;
     font-weight: bold;
     color:$light-gray;
+    font-display: auto;
 }
 .f-bold{
     font-family: $monoserat;

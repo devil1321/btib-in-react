@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="footer" style={{backgroundImage:'url(/assets/title-area-pattern.png)'}}>
             <div className="footer__widget">
                 <h6 className="footer__widget-heading">O FIRMIE</h6>
-                <img src="/assets/logo_footer.png" alt="" />
+                <img src="/assets/logo_footer.png" alt="logo" width="#" height="#" />
                 <Link to="">CZYTAJ WIĘCEJ</Link>
             </div>
             <div className="footer__widget">
@@ -25,11 +25,11 @@ const Footer = () => {
                 <h6 className="footer__widget-heading">BTIB NA FACEBOOKU</h6>
                 <p>Odwiedź Nasz profil na Facebooku</p>
                 <button>Facebook</button>
-                <img src="/assets/S0DDLRGO.png" alt="" />
+                <img src="/assets/S0DDLRGO.png" alt="logo-2" width="#" height="#"/>
             </div>
             <div className="footer__end">
                 <p>Bautechnik - Wszelkie prawa zastrzeżone</p>
-                <p>Wykonanie: <Link to="">Projektowanie stron - Wojoweb Kraków</Link><img src='/assets/wojoweb.png' /> &copy; 2015</p>
+                <p>Wykonanie: <Link to="">Projektowanie stron - Wojoweb Kraków</Link><img src='/assets/wojoweb.png' alt="wojoweb" width="#" height="#"/> &copy; 2015</p>
             </div>
         </div>
     )

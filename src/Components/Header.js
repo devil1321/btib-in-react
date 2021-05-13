@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
     return (
         <div className="header">
-            <img src='/assets/logo.png'/>
+            <img src='/assets/logo.png' alt="logo" width="#" height="#"/>
             <div className="header__widget-wrapper">
                 <div className="header__widget">
                     <i className="fa  fa-phone  fa-3x"></i>
