@@ -1,4 +1,8 @@
 .header{
+    position: relative;
+    top:0px;
+    left:0px;
+    z-index: 2;
     padding:0px 140px 20px 100px;
     background-color: $header-bg;
     @include createFlex(row,space-between,center,null);

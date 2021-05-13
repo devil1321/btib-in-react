@@ -1,0 +1,16 @@
+.home{
+    &__carousel{
+        position: relative;
+        top:0px;
+        left:0px;
+        z-index: 1;
+        margin-top: -55px;
+    }
+    &__heading{
+        padding:70px 0px;
+        text-align: center;
+        font-family: $monoserat;
+        font-weight: bold;
+        font-size: pxToRem(40);
+    }
+}

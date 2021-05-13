@@ -1,10 +1,34 @@
 import React from 'react'
 import PageSheme from '../Components/PageSheme'
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 const Home = () => {
     return (
         <div className="home">
-            <PageSheme></PageSheme>
+            <PageSheme>
+                <div className="home__carousel">
+                    <Carousel
+                        autoFocus={true}
+                        autoPlay={true}
+                        emulateTouch={true}
+                        infiniteLoop={true}
+                        interval={3000}
+                        showStatus={false}
+                        showThumbs={false}
+                    >
+                    <div>
+                        <img src="assets/slide-2.jpg" />
+                    </div>
+                    <div>
+                        <img src="assets/slide-1.jpg" />
+                    </div>
+                    <div>
+                        <img src="assets/slide-3.jpg" />
+                    </div>
+                    </Carousel>
+                </div>
+                <h1 className="home__heading">BTIB BAU-TECHNIK Inżynieria Budowlana Sp. z o. o.</h1>
+            </PageSheme>
         </div>
     )
 }
