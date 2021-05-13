@@ -1,5 +1,3 @@
-import './styles/themes/default/theme.scss'
-// import 'font-awesome/css/font-awesome.min.css';
 import {Switch,Route} from 'react-router-dom'
 import Home from './Pages/Home'
 import O_Firmie from './Pages/O_Firmie'
@@ -8,6 +6,8 @@ import Realizacje from './Pages/Realizacje'
 import AktyPrawne from './Pages/AktyPrawne'
 import Wspolpraca from './Pages/Wspolpraca'
 import Kontakt from './Pages/Kontakt';
+// import 'font-awesome/css/font-awesome.min.css'; 
+import './styles/themes/default/theme.scss'
 function App() {
   return (
     <div className="App">
