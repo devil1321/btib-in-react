@@ -1,5 +1,5 @@
 import './styles/themes/default/theme.scss'
-import 'font-awesome/css/font-awesome.min.css';
+// import 'font-awesome/css/font-awesome.min.css';
 import {Switch,Route} from 'react-router-dom'
 import Home from './Pages/Home'
 import O_Firmie from './Pages/O_Firmie'
