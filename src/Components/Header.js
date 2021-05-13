@@ -20,8 +20,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="header__widget">
-                    {/* <i class="fa fa-clock-o fa-3x"></i> */}
-                    <i class="fa fa-clock fa-3x"></i>
+                    <i class="fa fa-clock-o fa-3x"></i>
                     <div className="widget__text">
                         <p>Godziny Otwarcia</p>
                         <p>8:00-16:00</p>
