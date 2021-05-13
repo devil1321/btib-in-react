@@ -4,7 +4,7 @@ const Breadcrumb = ({path}) => {
     return (
         <div className="breadcrumb">
             <Link to = '/'>Strona Główna</Link>
-            <Link to = '/'>{path}</Link>
+            <Link>{path}</Link>
         </div>
     )
 }
