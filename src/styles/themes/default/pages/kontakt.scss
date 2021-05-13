@@ -7,4 +7,89 @@
             padding:0px;
         }
     }
+    &__form-wrapper{
+        padding:50px 60px;
+        @include createFlex(row,flex-start,flex-start,wrap);
+    }
+    &__heading{
+        width: 100%;
+        position: relative;
+        top:0px;
+        left:0px;
+        font-size: pxToRem(30);
+        padding-bottom: 15px;
+        margin-bottom: 50px;
+        color:$text-color;
+        border-bottom: 1px solid rgb(219, 219, 219);
+        &:before{
+            content: '';
+            position: absolute;
+            bottom:-1px;
+            left:0px;
+            width:30px;
+            border-bottom: 3px solid $light-orange;
+        }
+    }
+    &__text{
+        margin-top: -20px;
+        width: 25%;
+        color:$light-gray;
+    }
+    form{
+        width: 75%;
+    }
+    &__form{
+        @include createFlex(row,flex-start,flex-start,wrap);    
+        &-input{
+            width: 30%;
+            margin-right: 40px;
+            input{
+                margin-bottom:20px;
+                padding:20px 30px;
+                display: block;
+                width: 100%;
+                background-color: $very-light-white;
+                border:1px solid $light-white;
+            }
+            input::placeholder{
+                font-family: $source-pro;
+                font-weight: bold;
+            }
+        }
+        &-message{
+            margin-left: auto;
+            width: 60%;
+            textarea{
+                box-sizing: border-box;
+                padding:20px 30px;
+                width: 100%;
+                background-color: $very-light-white;
+                border:1px solid $light-white;
+            }
+            textarea::placeholder{
+                font-family: $source-pro;
+                font-weight: bold;
+            }
+            p{
+                line-height: 1.5;
+            }
+            button{
+                margin-left: auto;
+                font-family: $monoserat;
+                font-weight: bold;
+                font-size: pxToRem(14);
+                display: block;
+                padding:15px 20px;
+                border: 0px;
+                border-radius: 3px;
+                color:$text-color;
+                background-color: $light-orange;
+                transition: all 400ms ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $dark-orange;
+                }
+            }
+        }
+    }
 }

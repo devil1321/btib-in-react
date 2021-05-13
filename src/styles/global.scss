@@ -1,9 +1,13 @@
-i,h1,h6{
+i,h1,h6,h2{
     font-display: auto;
+    font-family: $monoserat;
+    font-weight: bold;
+
 }
 a{
     text-decoration: none;
     font-display: auto;
+    font-family: $source-pro;
 }
 p{
     font-family:$source-pro;
