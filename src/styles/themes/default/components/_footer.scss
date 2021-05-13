@@ -1,0 +1,108 @@
+.footer{
+    box-sizing: border-box;
+    height: 360px;
+    padding: 50px 60px;
+    background-color: $very-light-white;
+    border-top: 1px solid $vert-light-gray;
+    @include createFlex(row,center,flex-start,wrap);
+    &__widget{
+        width: 30%;
+        margin: 0px 15px;
+        img{
+            width: 65%;
+        }
+        p{
+            color:$light-gray;
+            font-family: $source-pro;
+        }
+        button{
+            font-family: $monoserat;
+            font-weight: bold;
+            font-size: pxToRem(14);
+            display: block;
+            padding:15px 20px;
+            border: 0px;
+            border-radius: 3px;
+            color:$text-color;
+            background-color: $light-orange;
+            transition: all 400ms ease-in-out;
+            &:hover{
+                cursor: pointer;
+                background-color: $dark-orange;
+            }
+        }
+        &:first-of-type{
+            a{
+                display: block;
+                font-family: $monoserat;
+                font-weight: bold;
+                color: $sky-blue;
+                font-size: pxToRem(12);
+                margin-top: 30px;
+            }
+        }
+        &:nth-of-type(3){
+            img{
+                margin: 20px 0px;
+                width: 45%;
+            }
+        }
+     
+        &-heading{
+            position: relative;
+            top:0px;
+            left:0px;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            font-family: $monoserat;
+            font-weight: bold;
+            font-size: pxToRem(12);
+            color:$text-color;
+            
+            border-bottom: 1px solid rgb(219, 219, 219);
+            &:before{
+                content: '';
+                position: absolute;
+                bottom:-1px;
+                left:0px;
+                width:30px;
+                border-bottom: 3px solid $light-orange;
+            }
+        }
+        &-list{
+            margin: 0px;
+            padding:0px;
+            list-style-type: none;
+            &-item{
+                margin: 8px 0px;
+                a{
+                    font-family: $source-pro;
+                    font-weight: 500;
+                    font-size: pxToRem(15);
+                    color:$light-gray;
+                    &:hover{
+                        text-decoration: underline;
+                        color:$text-color;
+                    }
+                }
+            }
+        }
+    }
+    &__end{
+        box-sizing: border-box;
+        min-width: calc(100% + 120px);
+        padding:0px 60px;
+        background-color: $light-orange;
+        font-family: $source-pro;
+        @include createFlex(row,space-between,center,null);
+        img{
+            margin: 0px 2px 0px 5px;
+        }
+        a{
+            color: $text-color;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}

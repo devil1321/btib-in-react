@@ -1,0 +1,50 @@
+.nav{
+    margin: -20px auto 0px;
+    width: 90vw;
+    background-color: #f9f9f9;
+    background: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
+    box-shadow:0 0 4px rgba(0, 0, 0, 0.25);
+    @include createFlex(row,center,center,wrap);
+    @media (max-width:1164px){
+        height: 152px;
+    }   
+    &__list{
+        margin: 0px;
+        width: 100%;
+        list-style-type: none;
+        @include createFlex(row,center,center,wrap);
+        a:last-child{
+            li::before{
+                border:0px;
+            }
+        }
+    }
+    &__item{
+        position: relative;
+        top:0px;
+        left:0px;
+        height: 70px;
+        padding: 0px 20px;
+        font-family: $monoserat;
+        font-weight: bold;
+        color:$light-gray;
+        border-top:3px solid transparent;
+       
+        @include createFlex(row,center,center,null);
+        &::before{
+            content: '';
+            position: absolute;
+            top:50%;
+            right:0px;
+            height:20px;
+            transform: translateY(-50%);
+            border-right: 1px solid rgba(0, 0, 0, 0.08);
+           
+        }
+        &:hover{
+            border-top:3px solid $light-orange;
+            color: $text-color;
+        }
+    }
+    
+}

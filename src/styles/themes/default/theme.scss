@@ -1,0 +1,18 @@
+/*-----------------set------------------------*/
+@import '../../variables';
+@import '../../mixins';
+@import '../../global';
+@import '../../normalize';
+@import '../../fonts';
+
+/*-----------------components-----------------*/
+@import './components/header';
+@import './components/heading';
+@import './components/breadcrumb';
+@import './components/nav';
+@import './components/footer';
+
+/*-----------------pages-----------------*/
+@import '../default/pages/ofirmie';
+@import '../default/pages/oferta';
+@import '../default/pages/realizacje';

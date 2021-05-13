@@ -1,0 +1,17 @@
+.oferta{
+    &__content{
+        padding:50px 50px;
+        p{
+            font-family:$source-pro;
+            font-weight: bold;
+            color:$light-gray;
+            margin: 8px 0px;
+            line-height: 1.5;
+        }
+        p:nth-of-type(2){
+            span{
+                margin-left: 5px;
+            }
+        }
+    }
+}

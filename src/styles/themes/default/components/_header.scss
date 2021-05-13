@@ -1,0 +1,42 @@
+.header{
+    padding:0px 140px 20px 100px;
+    background-color: $header-bg;
+    @include createFlex(row,space-between,center,null);
+    &__widget-wrapper{
+        @include createFlex(row,space-between,center,null);
+    }
+    &__widget{
+        padding: 0px 15px;
+        @include createFlex(row,space-between,flex-start,null);
+        border-right: 1px solid $border-color;
+        p{
+            margin: 2px 0px;
+            font-weight: bold;
+            font-size: pxToRem(14);
+        }
+        p:first-of-type{
+            font-family: $monoserat;
+            color:$light-white;
+        }
+        p:last-of-type{
+            font-family: $source-pro;
+            color:$light-gray;
+            
+        }
+        i{
+            font-size: pxToRem(40);
+            margin-right:10px;
+            color:$light-gray;
+            transition: all 400ms linear;
+            &:hover{
+                color:$light-white;
+            }
+        }
+    }
+    .fa-facebook{
+        cursor: pointer;
+        margin-left:15px;
+        color:$light-orange;
+        font-size: pxToRem(25);
+    }
+}

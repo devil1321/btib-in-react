@@ -1,0 +1,13 @@
+a{
+    text-decoration: none;
+}
+p{
+    font-family:$source-pro;
+    font-weight: bold;
+    color:$light-gray;
+}
+.f-bold{
+    font-family: $monoserat;
+    font-weight: bold;
+    font-size: pxToRem(14);
+}

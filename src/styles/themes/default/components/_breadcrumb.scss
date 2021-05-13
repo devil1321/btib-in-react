@@ -1,0 +1,38 @@
+.breadcrumb{
+    padding:15px 30px;
+    box-shadow: 0 2px 2px #e6e6e6;;
+    a{
+        position: relative;
+        top:0px;
+        left:0px;
+        margin: 0px 20px;
+        font-size: pxToRem(14);
+    }
+    a:first-of-type::before,
+    a:first-of-type::after{
+        content: '';
+        position: absolute;
+        width: 28%;
+        border-bottom: 1px solid $light-white;
+    }
+    a:first-of-type::before{
+        right: -30px;
+        top:-4px;
+        transform: rotate(55deg);
+    }
+    a:first-of-type::after{
+        right: -29px;
+        top:20px;
+        width: 27%;
+        transform: rotate(-55deg);
+    }
+    a:first-of-type{
+        font-family: $monoserat;
+        font-weight: bold;
+        color:$text-color
+    }
+    a:last-of-type{
+        font-family: $source-pro;
+        color:$light-gray;
+    }
+}
