@@ -6,7 +6,7 @@ import Realizacje from './Pages/Realizacje'
 import AktyPrawne from './Pages/AktyPrawne'
 import Wspolpraca from './Pages/Wspolpraca'
 import Kontakt from './Pages/Kontakt';
-// import 'font-awesome/css/font-awesome.min.css'; 
+import 'font-awesome/css/font-awesome.min.css'; 
 import './styles/themes/default/theme.scss'
 function App() {
   return (
