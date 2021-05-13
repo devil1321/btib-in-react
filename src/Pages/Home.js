@@ -15,6 +15,7 @@ const Home = () => {
                         interval={3000}
                         showStatus={false}
                         showThumbs={false}
+                        stopOnHover={false}
                     >
                     <div>
                         <img src="assets/slide-2.jpg" alt="slide" />
