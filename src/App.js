@@ -7,7 +7,6 @@ import Oferta from './Pages/Oferta'
 import Realizacje from './Pages/Realizacje'
 import AktyPrawne from './Pages/AktyPrawne'
 import Wspolpraca from './Pages/Wspolpraca'
-import kontakt from './Pages/Kontakt'
 import Kontakt from './Pages/Kontakt';
 function App() {
   return (
