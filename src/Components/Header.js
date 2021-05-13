@@ -13,21 +13,21 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="header__widget">
-                    <i class="fa fa-home fa-3x"></i>
+                    <i className="fa fa-home fa-3x"></i>
                     <div className="widget__text">
                         <p>ul.Starorudzka 12E</p>
                         <p>93-418 Łódź</p>
                     </div>
                 </div>
                 <div className="header__widget">
-                    <i class="fa fa-clock-o fa-3x"></i>
+                    <i className="fa fa-clock-o fa-3x"></i>
                     <div className="widget__text">
                         <p>Godziny Otwarcia</p>
                         <p>8:00-16:00</p>
                     </div>
                 </div>        
                 <Link to="">
-                    <i class="fa  fa-facebook"></i> 
+                    <i className="fa  fa-facebook"></i> 
                 </Link>
             </div>
         </div>

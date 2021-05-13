@@ -17,13 +17,13 @@ const Home = () => {
                         showThumbs={false}
                     >
                     <div>
-                        <img src="assets/slide-2.jpg" />
+                        <img src="assets/slide-2.jpg" alt="slide" />
                     </div>
                     <div>
-                        <img src="assets/slide-1.jpg" />
+                        <img src="assets/slide-1.jpg" alt="slide" />
                     </div>
                     <div>
-                        <img src="assets/slide-3.jpg" />
+                        <img src="assets/slide-3.jpg"  alt="slide"/>
                     </div>
                     </Carousel>
                 </div>
