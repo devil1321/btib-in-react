@@ -91,6 +91,9 @@
                 width: 100%;
                 background-color: $very-light-white;
                 border:1px solid $light-white;
+                @include breakpoint-down(small){
+                    padding: 20px 10px;
+                }
               
             }
             textarea::placeholder{
