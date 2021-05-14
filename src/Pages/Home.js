@@ -7,8 +7,7 @@ const Home = () => {
         <div className="home">
             <PageSheme>
                 <div className="home__carousel">
-                    <Carousel
-                        autoFocus={true}
+                    <Carousel 
                         autoPlay={true}
                         emulateTouch={true}
                         infiniteLoop={true}
@@ -16,14 +15,15 @@ const Home = () => {
                         showStatus={false}
                         showThumbs={false}
                         stopOnHover={false}
+                       
                     >
-                    <div>
+                    <div className='home__carousel-slide'>
                         <img src="assets/slide-2.jpg" alt="slide" />
                     </div>
-                    <div>
+                    <div className='home__carousel-slide'>
                         <img src="assets/slide-1.jpg" alt="slide" />
                     </div>
-                    <div>
+                    <div className='home__carousel-slide'>
                         <img src="assets/slide-3.jpg"  alt="slide"/>
                     </div>
                     </Carousel>

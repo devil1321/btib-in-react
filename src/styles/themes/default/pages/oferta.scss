@@ -1,6 +1,12 @@
 .oferta{
     &__content{
-        padding:50px 50px;
+        padding:50px;
+        @include breakpoint-down(medium){
+            padding:50px 25px;
+        }
+        @include breakpoint-down(small){
+            padding:50px 15px;
+        }
         p{
             font-family:$source-pro;
             font-weight: bold;

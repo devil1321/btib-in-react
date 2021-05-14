@@ -1,6 +1,12 @@
 .breadcrumb{
     padding:15px 30px;
     box-shadow: 0 2px 2px #e6e6e6;;
+    @include breakpoint-down(medium){
+        padding:15px 10px;
+    }
+    @include breakpoint-down(small){
+        padding:15px 0px;
+    }
     a{
         position: relative;
         top:0px;

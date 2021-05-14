@@ -5,6 +5,26 @@
         left:0px;
         z-index: 1;
         margin-top: -55px;
+        height: 400px;
+        @include breakpoint-down(medium){
+            margin-top: 0px;
+            height: 100%;
+        }
+       
+    }
+    &__carousel-slide{
+        @include breakpoint-down(medium){
+            height: 320px;
+            img{
+                width: 300% !important;
+            }
+        }
+        @include breakpoint-down(small){
+            height: 220px;
+            img{
+                width: 220% !important;
+            }
+        }
     }
     &__heading{
         padding:70px 0px;

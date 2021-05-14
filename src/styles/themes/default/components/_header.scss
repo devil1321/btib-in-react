@@ -23,6 +23,9 @@
             display: block;
             @include createFlex(row,space-between,center,null);
         }
+        @include breakpoint-down(small){
+            padding:2px 8px;
+        }
         p{
             font-family: $monoserat;
             font-weight: bold;

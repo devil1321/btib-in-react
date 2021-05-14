@@ -23,7 +23,9 @@ const Kontakt = (props) => {
                         <Link><i></i>biuro@btib.pl</Link>
                         <p><i></i>Godziny otwarcia</p>
                         <p>8:00-16:00</p>
-                        <i></i>
+                        <Link to="">
+                            <i className="fa  fa-facebook"></i> 
+                        </Link>
                     </div>
                     <form action="" encType='multipart/form-data'>
                             <div className="kontakt__form">

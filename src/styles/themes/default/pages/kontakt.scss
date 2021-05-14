@@ -10,6 +10,12 @@
     &__form-wrapper{
         padding:50px 60px;
         @include createFlex(row,flex-start,flex-start,wrap);
+        @include breakpoint-down(medium){
+            padding:50px 25px;
+        }
+        @include breakpoint-down(small){
+            padding:50px 15px;
+        }
     }
     &__heading{
         width: 100%;
@@ -34,15 +40,26 @@
         margin-top: -20px;
         width: 25%;
         color:$light-gray;
+        @include breakpoint-down(medium){
+            width: 100%;
+        }
     }
     form{
         width: 75%;
+        @include breakpoint-down(medium){
+            width: 100%  
+        } 
     }
     &__form{
-        @include createFlex(row,flex-start,flex-start,wrap);    
+        @include createFlex(row,flex-start,flex-start,wrap);   
+        
         &-input{
             width: 30%;
             margin-right: 40px;
+            @include breakpoint-down(small){
+                width: 100%;
+            }
+            
             input{
                 margin-bottom:20px;
                 padding:20px 30px;
@@ -50,6 +67,9 @@
                 width: 100%;
                 background-color: $very-light-white;
                 border:1px solid $light-white;
+                @include breakpoint-down(small){
+                    padding:20px 19px;
+                }
             }
             input::placeholder{
                 font-family: $source-pro;
@@ -59,12 +79,19 @@
         &-message{
             margin-left: auto;
             width: 60%;
+            @include breakpoint-down(small){
+                width: 100%;
+            }
+            @include breakpoint-down-l(medium){
+                width: 55%;
+            }
             textarea{
                 box-sizing: border-box;
                 padding:20px 30px;
                 width: 100%;
                 background-color: $very-light-white;
                 border:1px solid $light-white;
+              
             }
             textarea::placeholder{
                 font-family: $source-pro;
@@ -90,6 +117,15 @@
                     background-color: $dark-orange;
                 }
             }
+        }
+    }
+    .fa-facebook{
+        cursor: pointer;
+        color:$light-orange;
+        font-size: pxToRem(25);
+        margin-left: 10px;
+        @include breakpoint-down(medium){
+            margin: 10px 5px;
         }
     }
 }
