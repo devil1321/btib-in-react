@@ -72,6 +72,9 @@
                 @include breakpoint-down(small){
                     padding:20px 19px;
                 }
+                @include breakpoint-down-l(medium){
+                    padding:20px 19px;
+                }
             }
             input::placeholder{
                 font-family: $source-pro;
