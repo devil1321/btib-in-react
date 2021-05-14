@@ -28,6 +28,9 @@
                 display: block;
                 margin-left: -15px;
             }
+            @include breakpoint-down(small){
+                margin-left: 0px;
+            }
         }
         p{
             color:$light-gray;
