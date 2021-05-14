@@ -59,7 +59,9 @@
             @include breakpoint-down(small){
                 width: 100%;
             }
-            
+            @include breakpoint-down-l(medium){
+                width: 100%;
+            }
             input{
                 margin-bottom:20px;
                 padding:20px 30px;
@@ -83,7 +85,7 @@
                 width: 100%;
             }
             @include breakpoint-down-l(medium){
-                width: 55%;
+                width: 100%;
             }
             textarea{
                 box-sizing: border-box;
